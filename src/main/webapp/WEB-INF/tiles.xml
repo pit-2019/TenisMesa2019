@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd"> 
+<tiles-definitions>  
+
+	<definition name="base.definition"  
+        template="/WEB-INF/views/pages/layout.jsp">  
+        
+        <put-attribute name="title" value="ProyectoIntegrador" />
+        <put-attribute name="menu" value="/WEB-INF/views/pages/menu.jsp" />       
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/views/pages/footer.jsp" />  
+     
+    </definition>
+
+    <definition name="enlaces" extends="base.definition">  
+        <put-attribute name="title" value="ProyectoIntegrador" />  
+    	<put-attribute name="body" value="/WEB-INF/views/pages/enlaces.jsp" />
+    </definition>   
+    <definition name="home" extends="base.definition">  
+        <put-attribute name="title" value="ProyectoIntegrador" />  
+    	<put-attribute name="body" value="/WEB-INF/views/pages/home.jsp" />
+    </definition>   
+    
+    <definition name="cart" extends="base.definition">  
+        <put-attribute name="title" value="ProyectoIntegrador" />  
+    	<put-attribute name="body" value="/WEB-INF/views/pages/cart.jsp" />
+    </definition>  
+    
+    <definition name="blog" extends="base.definition">  
+        <put-attribute name="title" value="ProyectoIntegrador" />  
+    	<put-attribute name="body" value="/WEB-INF/views/pages/blog.jsp" />
+    </definition> 
+    
+    <definition name="blog-single" extends="base.definition">  
+        <put-attribute name="title" value="ProyectoIntegrador" />  
+    	<put-attribute name="body" value="/WEB-INF/views/pages/blog-single.jsp" />
+    </definition>
+    
+    <definition name="perfil-public" extends="base.definition">  
+        <put-attribute name="title" value="ProyectoIntegrador" />  
+    	<put-attribute name="body" value="/WEB-INF/views/pages/perfil/perfil-public.jsp" />
+    </definition> 
+    
+    <definition name="login" extends="base.definition">  
+        <put-attribute name="title" value="ProyectoIntegrador" />  
+    	<put-attribute name="body" value="/WEB-INF/views/pages/login.jsp" />
+    </definition> 
+    
+    <definition name="noticias" extends="base.definition">  
+        <put-attribute name="title" value="ProyectoIntegrador" />  
+    	<put-attribute name="body" value="/WEB-INF/views/pages/noticia/noticias.jsp" />
+    </definition>   
+    
+    <definition name="registrar_noticia" extends="base.definition">  
+        <put-attribute name="title" value="ProyectoIntegrador" />  
+    	<put-attribute name="body" value="/WEB-INF/views/pages/noticia/registrar_noticia.jsp" />
+    </definition>
+    
+    
+    <definition name="confirmarNoticia" template="/WEB-INF/views/pages/noticia/confirmarNoticia.jsp"/>
+    <definition name="confirmarDeleteNoticia" template="/WEB-INF/views/pages/noticia/confirmarDeleteNoticia.jsp"/>
+    
+    <definition name="productos" extends="base.definition">  
+        <put-attribute name="title" value="ProyectoIntegrador" />  
+    	<put-attribute name="body" value="/WEB-INF/views/pages/producto/productos.jsp" />
+    </definition>   
+    
+    <definition name="registrar_producto" extends="base.definition">  
+        <put-attribute name="title" value="ProyectoIntegrador" />  
+    	<put-attribute name="body" value="/WEB-INF/views/pages/producto/registrar_producto.jsp" />
+    </definition>
+    
+    
+    <definition name="confirmarProducto" template="/WEB-INF/views/pages/producto/confirmarProducto.jsp"/>
+    <definition name="confirmarDeleteProducto" template="/WEB-INF/views/pages/producto/confirmarDeleteProducto.jsp"/>
+
+	<definition name="perfiles" extends="base.definition">  
+        <put-attribute name="title" value="ProyectoIntegrador" />  
+    	<put-attribute name="body" value="/WEB-INF/views/pages/perfil/perfiles.jsp" />
+    </definition>   
+    
+    <definition name="registrar_perfil" extends="base.definition">  
+        <put-attribute name="title" value="ProyectoIntegrador" />  
+    	<put-attribute name="body" value="/WEB-INF/views/pages/perfil/registrar_perfil.jsp" />
+    </definition>
+    
+    
+    <definition name="confirmarPerfil" template="/WEB-INF/views/pages/perfil/confirmarPerfil.jsp"/>
+    <definition name="confirmarDeletePerfil" template="/WEB-INF/views/pages/perfil/confirmarDeletePerfil.jsp"/>
+    
+    <definition name="confirmarVenta" template="/WEB-INF/views/pages/cart/confirmarVenta.jsp"/>
+	<definition name="confirmarUsuario" template="/WEB-INF/views/pages/confirmarUsuario.jsp"/>
+	
+	<definition name="confirmarTarjetaCredito" template="/WEB-INF/views/pages/cart/confirmarTarjetaCredito.jsp"/>
+	
+	
+	<definition name="categorias" extends="base.definition">  
+        <put-attribute name="title" value="ProyectoIntegrador" />  
+    	<put-attribute name="body" value="/WEB-INF/views/pages/categoria/categorias.jsp" />
+    </definition>   
+    
+    <definition name="registrar_categoria" extends="base.definition">  
+        <put-attribute name="title" value="ProyectoIntegrador" />  
+    	<put-attribute name="body" value="/WEB-INF/views/pages/categoria/registrar_categoria.jsp" />
+    </definition>
+	
+	<definition name="confirmarCategoria" template="/WEB-INF/views/pages/categoria/confirmarCategoria.jsp"/>
+    <definition name="confirmarDeleteCategoria" template="/WEB-INF/views/pages/categoria/confirmarDeleteCategoria.jsp"/>
+    
+    <definition name="usuarios" extends="base.definition">  
+        <put-attribute name="title" value="ProyectoIntegrador" />  
+    	<put-attribute name="body" value="/WEB-INF/views/pages/usuario/usuarios.jsp" />
+    </definition>   
+    
+    <definition name="registrar_usuario" extends="base.definition">  
+        <put-attribute name="title" value="ProyectoIntegrador" />  
+    	<put-attribute name="body" value="/WEB-INF/views/pages/usuario/registrar_usuario.jsp" />
+    </definition>
+	
+	<definition name="confirmarUsuario" template="/WEB-INF/views/pages/usuario/confirmarUsuario.jsp"/>
+    <definition name="confirmarDeleteUsuario" template="/WEB-INF/views/pages/usuario/confirmarDeleteUsuario.jsp"/>
+   
+   <definition name="compras" extends="base.definition">  
+        <put-attribute name="title" value="ProyectoIntegrador" />  
+    	<put-attribute name="body" value="/WEB-INF/views/pages/compras/compras.jsp" />
+    </definition>   
+    
+    <definition name="tags" extends="base.definition">  
+        <put-attribute name="title" value="ProyectoIntegrador" />  
+    	<put-attribute name="body" value="/WEB-INF/views/pages/tag/tags.jsp" />
+    </definition>   
+    
+    <definition name="registrar_tag" extends="base.definition">  
+        <put-attribute name="title" value="ProyectoIntegrador" />  
+    	<put-attribute name="body" value="/WEB-INF/views/pages/tag/registrar_tag.jsp" />
+    </definition>
+	
+	<definition name="confirmarTag" template="/WEB-INF/views/pages/tag/confirmarTag.jsp"/>
+    <definition name="confirmarDeleteTag" template="/WEB-INF/views/pages/tag/confirmarDeleteTag.jsp"/>
+</tiles-definitions>  
